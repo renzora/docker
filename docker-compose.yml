@@ -42,11 +42,11 @@ services:
   server:
     build:
       context: .
-      dockerfile: ./docker/Dockerfile-server
+      dockerfile: ./docker/Dockerfile-ws
     ports:
       - "3000:3000"
     volumes:
-      - ./server:/usr/src/app
+      - ./ws:/usr/src/app
     networks:
       - app-network
 
