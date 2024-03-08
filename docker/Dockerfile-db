@@ -1,0 +1,12 @@
+FROM mysql:5.7
+
+# Environment variables
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=your_database_name
+ENV MYSQL_USER=your_mysql_user
+ENV MYSQL_PASSWORD=your_mysql_password
+
+# Copy SQL script to initialize database
+COPY ./init.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 3306

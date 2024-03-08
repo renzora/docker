@@ -1,0 +1,43 @@
+# Use the official PHP with Apache image
+FROM php:apache
+
+# Install git
+RUN apt-get update && apt-get install -y git
+
+# Clone web app repository
+RUN mkdir -p /root/.ssh && \
+    chmod 0700 /root/.ssh && \
+    ssh-keyscan github.com >> /root/.ssh/known_hosts
+
+RUN --mount=type=secret,id=ssh_key \
+    cp /run/secrets/ssh_key /root/.ssh/id_rsa && \
+    chmod 600 /root/.ssh/id_rsa
+
+RUN git clone git@github.com:renzora/web /tmp/web
+
+# Copy Apache vhost file
+COPY /docker/default.conf /etc/apache2/sites-available/000-default.conf
+
+# Enable Apache modules
+RUN a2enmod rewrite
+
+# Restart Apache
+RUN service apache2 restart
+
+# Change working directory to web root
+WORKDIR /var/www/html
+
+# Copy web app files
+RUN cp -a /tmp/web/. .
+
+# Set permissions for the web server to access files
+RUN chown -R www-data:www-data /var/www/html
+
+# Expose port 80
+EXPOSE 80
+
+# Clean up
+RUN rm -rf /tmp/web
+
+# Start Apache server
+CMD ["apache2-foreground"]
