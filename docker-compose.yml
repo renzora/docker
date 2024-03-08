@@ -46,7 +46,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./ws:/usr/src/ws
+      - ./ws:/usr/src/app
     networks:
       - app-network
 
@@ -58,7 +58,7 @@ services:
     ports:
       - "8122:8122"
     volumes:
-      - ./server:/usr/src/server
+      - ./server:/usr/src/app
     networks:
       - app-network
 
