@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Clone the web repository and install Composer dependencies
-git clone https://github.com/renzora/web
+git clone git@github.com:renzora/web.git
 cd web
 composer install
 cd ..
 
 # Clone the server repository and install Node.js dependencies
-git clone https://github.com/renzora/server
+git clone git@github.com:renzora/server.git
 cd server
 npm install
 cd ..
