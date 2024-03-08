@@ -3,9 +3,9 @@
 - docker
 
 # installation
-- git clone https://github.com/renzora/dev
-- cd dev
-- ./setup.sh
+```git clone https://github.com/renzora/dev```
+``` cd dev```
+```./setup.sh``` (use git bash on windows)
 
 # services
 - website: http://localhost
