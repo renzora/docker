@@ -1,0 +1,8 @@
+# requirements
+- git
+- docker
+
+# installation
+- git clone https://github.com/renzora/dev
+- cd dev
+- ./setup.sh

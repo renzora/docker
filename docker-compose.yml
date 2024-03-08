@@ -13,8 +13,8 @@ services:
     environment:
       DB_HOST: db
       DB_PORT: 3306
-      DB_USER: exampleuser
-      DB_PASSWORD: examplepassword
+      DB_USER: admin
+      DB_PASSWORD: password
       DB_DATABASE: renzora
       JWT_KEY: key
     depends_on:
@@ -28,10 +28,10 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: examplepassword
+      MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: renzora
-      MYSQL_USER: exampleuser
-      MYSQL_PASSWORD: examplepassword
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: password
     volumes:
       - db-data:/var/lib/mysql
       - ./docker/db/init.sql:/docker-entrypoint-initdb.d/init.sql
