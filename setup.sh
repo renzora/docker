@@ -8,7 +8,7 @@ cd ..
 
 # Clone the server repository and install Node.js dependencies
 git clone https://github.com/renzora/ws
-cd server
+cd ws
 npm install
 cd ..
 
