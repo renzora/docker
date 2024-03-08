@@ -7,7 +7,7 @@ composer install
 cd ..
 
 # Clone the server repository and install Node.js dependencies
-git clone git@github.com:renzora/server
+git clone git@github.com:renzora/ws
 cd server
 npm install
 cd ..
