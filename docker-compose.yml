@@ -1,39 +1,58 @@
 version: '3'
-
 services:
-  web:
+  # Apache with PHP
+  webserver:
     build:
-      context: ./app/web
-      dockerfile: ../../docker/Dockerfile-app
+      context: .
+      dockerfile: ./docker/Dockerfile-apache
     ports:
       - "80:80"
     volumes:
-      - ./app/web:/var/www/html
+      - ./web:/var/www/html
+      - ./docker/config/apache.conf:/etc/apache2/sites-enabled/000-default.conf
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USER: exampleuser
+      DB_PASSWORD: examplepassword
+      DB_DATABASE: renzora
+      JWT_KEY: key
     depends_on:
-      - server
       - db
+    networks:
+      - app-network
 
+  # MySQL
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: examplepassword
+      MYSQL_DATABASE: renzora
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepassword
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./docker/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-network
+
+  # Node.js server
   server:
     build:
       context: .
       dockerfile: ./docker/Dockerfile-server
-    volumes:
-      - ./server:/app/server
-    depends_on:
-      - db
-
-  db:
-    image: mysql:latest
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: your_database
-      MYSQL_USER: your_user
-      MYSQL_PASSWORD: your_password
     ports:
-      - "3306:3306"
+      - "3000:3000"
     volumes:
-      - db_data:/var/lib/mysql
+      - ./server:/usr/src/app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
 
 volumes:
-  db_data:
+  db-data:

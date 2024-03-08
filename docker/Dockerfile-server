@@ -1,37 +1,13 @@
-# Use the official Node.js image
-FROM node:latest
+FROM node:14
 
-# Install git
-RUN apt-get update && apt-get install -y git
+WORKDIR /usr/src/app
 
-# Clone server repository
-RUN mkdir -p /root/.ssh && \
-    chmod 0700 /root/.ssh && \
-    ssh-keyscan github.com >> /root/.ssh/known_hosts
+COPY package*.json ./
 
-RUN --mount=type=secret,id=ssh_key \
-    cp /run/secrets/ssh_key /root/.ssh/id_rsa && \
-    chmod 600 /root/.ssh/id_rsa
-
-RUN git clone git@github.com:renzora/server /tmp/server
-
-# Set working directory
-WORKDIR /app/server
-
-# Copy package.json and package-lock.json
-COPY /docker/package*.json ./
-
-# Install dependencies
 RUN npm install
 
-# Copy server files
-RUN cp -a /tmp/server/. .
+COPY . .
 
-# Expose port (if necessary)
-# EXPOSE <port>
+EXPOSE 3000
 
-# Clean up
-RUN rm -rf /tmp/server
-
-# Start the server
-CMD ["node", "app.js"]
+CMD ["npm", "start"]

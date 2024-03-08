@@ -1,0 +1,7 @@
+FROM php:apache
+
+# Enable mod_rewrite
+RUN a2enmod rewrite
+
+# Restart Apache to apply changes
+RUN service apache2 restart
