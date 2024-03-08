@@ -38,15 +38,27 @@ services:
     networks:
       - app-network
 
-  # Node.js server
-  server:
+  # Node.js ws-server
+  ws:
     build:
       context: .
       dockerfile: ./docker/Dockerfile-ws
     ports:
       - "3000:3000"
     volumes:
-      - ./ws:/usr/src/app
+      - ./ws:/usr/src/ws
+    networks:
+      - app-network
+
+      # Node.js server
+  server:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile-server
+    ports:
+      - "8122:8122"
+    volumes:
+      - ./server:/usr/src/server
     networks:
       - app-network
 
