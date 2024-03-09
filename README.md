@@ -3,7 +3,7 @@
 - docker
 
 # installation
-```curl -sSL https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/738aab6be91d3e6880705bb61d78ef7c5839eb0e/setup.sh | bash```
+```https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/e51ef914082d679285161798de57b849f8e6c95d/setup.sh```
 
 # services
 - website: http://localhost
