@@ -3,8 +3,7 @@
 - docker
 
 # installation
-```curl -sSL https://gist.githubusercontent.com/pianoplayerjames/84bee4f3be8dd41fdea99d5b8cae0199/raw/71e5cf867f1b7b2c3e2a799d44fc08082a9b73b4/Apple-Keyboard-Fn.sh | bash
-```
+```curl -sSL https://gist.githubusercontent.com/pianoplayerjames/84bee4f3be8dd41fdea99d5b8cae0199/raw/71e5cf867f1b7b2c3e2a799d44fc08082a9b73b4/Apple-Keyboard-Fn.sh | bash```
 
 # services
 - website: http://localhost
