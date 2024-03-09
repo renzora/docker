@@ -1,6 +1,9 @@
 # requirements
 - git
 - docker
+- composer php
+- nodejs
+- npm
 
 # installation
 ```https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/e51ef914082d679285161798de57b849f8e6c95d/setup.sh```
