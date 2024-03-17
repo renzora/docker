@@ -7,7 +7,7 @@
 - npm
 
 # Installing on windows
-In order to run bash scripts on window you will either need git bash or wsl. On your linux distribution you will need php, composer, nodejs and npm in order to install the dev project.
+In order to run bash scripts on windows you will either need git bash or wsl. On your linux distribution you will need php, composer, nodejs and npm in order to install the dev project.
 
 # Installing on linux, mac
 Please make sure you have nodejs, npm, php & composer installed on your host machine
