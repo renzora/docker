@@ -6,9 +6,13 @@
 - nodejs
 - npm
 
-# installation
-Please make sure you have nodejs, npm, php & composer installed on your host machine then run:
+# Installing on windows
+In order to run bash scripts on window you will either need git bash or wsl. On your linux distribution you will need php, composer, nodejs and npm in order to install the dev project.
 
+# Installing on linux, mac
+Please make sure you have nodejs, npm, php & composer installed on your host machine
+
+# Install
 ```curl -sSL https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/setup.sh | bash```
 
 # services
