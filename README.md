@@ -1,7 +1,8 @@
 # requirements
 - git
 - docker
-- composer php
+- php
+- composer
 - nodejs
 - npm
 
