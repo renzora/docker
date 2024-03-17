@@ -1,14 +1,70 @@
-# requirements
-- to install WSL for windows run: ```wsl --install``` on command prompt
-- git https://git-scm.com/downloads
-- docker https://www.docker.com/products/docker-desktop/
-- php https://www.php.net/manual/en/install.php
-- composer https://getcomposer.org/download/
-- nodejs https://nodejs.org/en
-- npm https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+# Requirements
+- Docker Desktop: https://www.docker.com/products/docker-desktop/
 
 # Installing on windows
-In order to run bash scripts on windows you will either need git bash or wsl. On your linux distribution you will need php, composer, nodejs and npm in order to install the dev project.
+
+Firstly download and install Docker desktop. if you already have it then please make sure it's running.
+
+In order to run the renzora dev environment you will need WSL. On your linux distribution you will need php, composer, nodejs and npm in order to install the dev project.
+
+```
+wsl -- install
+```
+
+```
+wslconfig /s Ubuntu
+```
+
+
+If you already have wsl installed:
+
+```
+wsl
+```
+
+Install php:
+```
+sudo apt install php
+```
+
+Install composer for php:
+```
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+```
+
+```
+sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```
+
+Install nodeJS and NPM:
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+```
+
+The below code simply allows you to use NVM immediately. otherwise you would have to close command prompt and reopen it. shucks.
+```
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+
+```
+nvm install node
+```
+
+Install renzora:
+```
+curl -sSL https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/setup.sh | bash
+```
+
+Open renzora project in visual studio code:
+```
+cd docker
+```
+
+```
+code .
+```
+
 
 # Installing on linux, mac
 Please make sure you have nodejs, npm, php & composer installed on your host machine
