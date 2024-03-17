@@ -51,7 +51,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm install node
 ```
 
-Install renzora:
+Install renzora (make sure Docker Desktop is running):
 ```
 curl -sSL https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/setup.sh | bash
 ```
