@@ -33,3 +33,10 @@ Please make sure you have nodejs, npm, php & composer installed on your host mac
 
 "driver not found"
 - after initially booting up your server you may see a driver not found message on the screen. this should go away after a few seconds as mysql service is still booting up.
+
+# WSL error:
+fatal: could not create work tree dir 'docker': File exists
+fatal: could not create work tree dir 'web': File exists
+fatal: could not create work tree dir 'server': File exists
+
+If you have previously set up the renzora dev environment and then deleted the project directory and tried to install again, you may be presented with this error if you are using WSL integration with Docker. A quick fix is to restart your pc. You can also go into docker settings and then click on resources and WSL integration and uncheck enable integration then apply and restart then run the command again.
