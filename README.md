@@ -7,7 +7,7 @@
 - npm
 
 # installation
-Please make sure you have nodejs, npm, & php installed on your host machine with composer then run:
+Please make sure you have nodejs, npm, php & composer installed on your host machine then run:
 
 ```curl -sSL https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/setup.sh | bash```
 
