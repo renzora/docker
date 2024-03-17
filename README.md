@@ -1,6 +1,6 @@
 # requirements
 - to install WSL for windows run: ```wsl --install``` on command prompt
-- git https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- git https://git-scm.com/downloads
 - docker https://www.docker.com/products/docker-desktop/
 - php https://www.php.net/manual/en/install.php
 - composer https://getcomposer.org/download/
