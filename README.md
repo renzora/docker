@@ -34,7 +34,7 @@ Please make sure you have nodejs, npm, php & composer installed on your host mac
 "driver not found"
 - after initially booting up your server you may see a driver not found message on the screen. this should go away after a few seconds as mysql service is still booting up.
 
-# WSL error:
+WSL error:
 fatal: could not create work tree dir 'docker': File exists
 fatal: could not create work tree dir 'web': File exists
 fatal: could not create work tree dir 'server': File exists
