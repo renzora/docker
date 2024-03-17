@@ -88,13 +88,4 @@ code .
 "driver not found"
 - after initially booting up your server you may see a driver not found message on the screen. this should go away after a few seconds as mysql service is still booting up.
 
-WSL error:
-
-"fatal: could not create work tree dir 'docker': File exists
-
-fatal: could not create work tree dir 'web': File exists
-
-fatal: could not create work tree dir 'server': File exists
-"
-
 If you have previously set up the renzora dev environment and then deleted the project directory and tried to install again, you may be presented with this error if you are using WSL integration with Docker. A quick fix is to restart your pc.
