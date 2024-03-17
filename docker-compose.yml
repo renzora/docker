@@ -1,6 +1,5 @@
 version: '3'
 services:
-  # Apache with PHP
   webserver:
     build:
       context: .
@@ -21,8 +20,6 @@ services:
       - db
     networks:
       - app-network
-
-  # MySQL
   db:
     image: mysql:5.7
     ports:
@@ -37,34 +34,18 @@ services:
       - ./docker/db/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - app-network
-
-  # Node.js ws-server
-  ws:
-    build:
-      context: .
-      dockerfile: ./docker/Dockerfile-ws
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./ws:/usr/src/app
-    networks:
-      - app-network
-
-      # Node.js server
   server:
     build:
       context: .
       dockerfile: ./docker/Dockerfile-server
     ports:
-      - "8122:8122"
+      - "3000:3000"
     volumes:
       - ./server:/usr/src/app
     networks:
       - app-network
-
 networks:
   app-network:
     driver: bridge
-
 volumes:
   db-data:
