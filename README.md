@@ -1,10 +1,11 @@
 # requirements
-- git
-- docker
-- php
-- composer
-- nodejs
-- npm
+- to install WSL for windows run: ```wsl --install``` on command prompt
+- git https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- docker https://www.docker.com/products/docker-desktop/
+- php https://www.php.net/manual/en/install.php
+- composer https://getcomposer.org/download/
+- nodejs https://nodejs.org/en
+- npm https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 # Installing on windows
 In order to run bash scripts on windows you will either need git bash or wsl. On your linux distribution you will need php, composer, nodejs and npm in order to install the dev project.
