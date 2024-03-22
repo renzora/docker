@@ -27,6 +27,10 @@ Install php:
 sudo apt install php
 ```
 
+```
+sudo apt-get remove apache2
+```
+
 Install composer for php:
 ```
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
