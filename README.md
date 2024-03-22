@@ -14,7 +14,8 @@ wsl
 curl -L renzora.net/dev | bash
 ```
 
-# Start Server (make sure docker desktop is running and you're in WSL)
+# Start Server
+- Make sure docker desktop is running and you're in WSL
 ```
 renzora
 ```
