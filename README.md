@@ -13,11 +13,6 @@ wsl --install
 
 If you already have wsl installed:
 
-
-```
-wslconfig /s Ubuntu
-```
-
 ```
 wsl
 ```
