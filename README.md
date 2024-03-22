@@ -1,6 +1,8 @@
 # Requirements
-- Docker Desktop: https://www.docker.com/products/docker-desktop/
+- Docker Desktop: https://www.docker.com/products/docker-desktop
 - WSL (windows) https://learn.microsoft.com/en-us/windows/wsl/install
+- Github Desktop: https://desktop.github.com
+- MySql Software: https://www.mysql.com/products/community
 
 # Installing on Windows WSL
 
@@ -48,8 +50,8 @@ Local path: \\wsl$\<distro>\home\<username>\docker\server
 ```
 
 # Services
-- website: http://localhost
-- websocket: wss://localhost:3000
+- Website: http://localhost
+- Websocket: wss://localhost:3000
 
 # Renzora Login
 - Username: admin
