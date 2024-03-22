@@ -23,17 +23,17 @@ renzora
 
 
 # Project location for Github Desktop
-- replace ```<distro>``` with your wsl distro and ```<username>``` with your wsl username
-- example: ```\\wsl$\ubuntu\home\johndoe\docker\web```
+- Replace ```<distro>``` with your WSL distro and ```<username>``` with your WSL username
+- Example: ```\\wsl$\ubuntu\home\johndoe\docker\web```
 
-Renzora docker setup
+Renzora Docker setup
 ```
 Repo url: https://github.com/renzora/docker
 
 Local path: \\wsl$\<distro>\home\<username>\docker\docker
 ```
 
-Renzora web frontend
+Renzora Web frontend
 ```
 Repo url: https://github.com/renzora/web
 
@@ -51,7 +51,7 @@ Local path: \\wsl$\<distro>\home\<username>\docker\server
 - website: http://localhost
 - websocket: wss://localhost:3000
 
-# Renzora login
+# Renzora Login
 - Username: admin
 - Password: password
 
