@@ -22,39 +22,6 @@ If you already have wsl installed:
 wsl
 ```
 
-Install php:
-```
-sudo apt install php
-```
-
-```
-sudo apt-get remove apache2
-```
-
-Install composer for php:
-```
-curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
-```
-
-```
-sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
-```
-
-Install nodeJS and NPM:
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-```
-
-The below code simply allows you to use NVM immediately. otherwise you would have to close command prompt and reopen it. shucks.
-```
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-```
-
-```
-nvm install node
-```
-
 Install renzora (make sure Docker Desktop is running):
 ```
 curl -sSL https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/setup.sh | bash
