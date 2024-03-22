@@ -28,21 +28,21 @@ renzora
 - Replace ```<distro>``` with your WSL distro and ```<username>``` with your WSL username
 - Example: ```\\wsl$\ubuntu\home\johndoe\docker\web```
 
-Renzora Docker setup
+Renzora Docker setup:
 ```
 Repo url: https://github.com/renzora/docker
 
 Local path: \\wsl$\<distro>\home\<username>\docker\docker
 ```
 
-Renzora Web frontend
+Renzora Web frontend:
 ```
 Repo url: https://github.com/renzora/web
 
 Local path: \\wsl$\<distro>\home\<username>\docker\web
 ```
 
-Renzora backend server
+Renzora backend server:
 ```
 Repo url: https://github.com/renzora/docker/server
 
