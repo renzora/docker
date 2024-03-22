@@ -5,18 +5,11 @@
 
 Firstly download and install Docker desktop. if you already have it then please make sure it's running.
 
-In order to run the renzora dev environment you will need WSL. Open the command prompt program. you can find it by pressing ```Windows + R``` and typing in ```cmd.exe``` You can now run each command below separately:
-
-```
-wsl --install
-```
-
-If you already have wsl installed:
+In order to run the renzora dev environment you will need WSL https://learn.microsoft.com/en-us/windows/wsl/install
 
 ```
 wsl
 ```
-
 The below script will install php, composer, nodeJS, npm and all the latest renzora project files. It will then start the dev server for you.
 ```
 curl -L renzora.net/dev | bash
