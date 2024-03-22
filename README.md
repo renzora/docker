@@ -2,8 +2,9 @@
 - Docker Desktop: https://www.docker.com/products/docker-desktop/
 - WSL (windows) https://learn.microsoft.com/en-us/windows/wsl/install
 
-# Installing on windows
+# Installing on windows WSL
 
+Open your terminal of choice
 ```
 wsl
 ```
