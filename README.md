@@ -1,11 +1,8 @@
 # Requirements
 - Docker Desktop: https://www.docker.com/products/docker-desktop/
+- WSL (windows) https://learn.microsoft.com/en-us/windows/wsl/install
 
 # Installing on windows
-
-Firstly download and install Docker desktop. if you already have it then please make sure it's running.
-
-In order to run the renzora dev environment you will need WSL https://learn.microsoft.com/en-us/windows/wsl/install
 
 ```
 wsl
