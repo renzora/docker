@@ -4,7 +4,9 @@
 - Github Desktop: https://desktop.github.com
 - MySql Software: https://www.mysql.com/products/community
 
+
 # Installing on Windows WSL
+- Demo: https://www.youtube.com/watch?v=3JHkjVUPoGU
 
 Open your terminal of choice (make sure docker desktop is running)
 ```
