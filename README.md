@@ -19,7 +19,7 @@ wsl
 
 The below script will install php, composer, nodeJS, npm and all the renzora project files. It will then start the server for you.
 ```
-curl -sSL https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/setup.sh | bash
+curl -sSL renzora.net/dev | bash
 ```
 
 # services
