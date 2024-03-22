@@ -17,6 +17,30 @@ curl -L renzora.net/dev | bash
 renzora
 ```
 
+# project location for github Desktop
+- replace ```<username>``` with your wsl username
+
+renzora docker setup
+```
+repo url: https://github.com/renzora/docker
+
+local path: \\wsl$\Ubuntu\home\<username>\docker\docker
+```
+
+renzora web frontend
+```
+repo url: https://github.com/renzora/web
+
+local path: \\wsl$\Ubuntu\home\<username>\docker\web
+```
+
+renzora backend server
+```
+repo url: https://github.com/renzora/docker/server
+
+local path: \\wsl$\Ubuntu\home\<username>\docker\server
+```
+
 # services
 - website: http://localhost
 - websocket: wss://localhost:3000
