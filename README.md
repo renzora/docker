@@ -50,20 +50,20 @@ Local path: \\wsl$\<distro>\home\<username>\docker\server
 ```
 
 # Services
-- Website: http://localhost
-- Websocket: wss://localhost:3000
+- Website: ```http://localhost```
+- Websocket: ```wss://localhost:3000```
 
 # Renzora Login
-- Username: admin
-- Password: password
+- Username: ```admin```
+- Password: ```password```
 
 # MySql
-- Host: localhost
-- Port: 3306
-- Database Name: renzora
-- Database Username: admin
-- Database Password: password
-- Mysql Password: password
+- Host: ```localhost```
+- Port: ```3306```
+- Database Name: ```renzora```
+- Database Username: ```admin```
+- Database Password: ```password```
+- Mysql Password: ```password```
 
 # Debugging
 
