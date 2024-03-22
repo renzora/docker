@@ -11,12 +11,12 @@ In order to run the renzora dev environment you will need WSL. On your linux dis
 wsl --install
 ```
 
+If you already have wsl installed:
+
+
 ```
 wslconfig /s Ubuntu
 ```
-
-
-If you already have wsl installed:
 
 ```
 wsl
