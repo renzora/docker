@@ -8,7 +8,6 @@ Open your terminal of choice
 ```
 wsl
 ```
-The below script will install php, composer, nodeJS, npm and all the latest renzora project files. It will then start the dev server for you.
 ```
 curl -L renzora.net/dev | bash
 ```
