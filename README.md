@@ -17,53 +17,53 @@ curl -L renzora.net/dev | bash
 renzora
 ```
 
-# notes
+# Notes
 "WebSocket connection to 'wss://localhost:3000/' failed"
 - because the local dev server is using a self-signed ssl certificate and not a domain specific CA certificate; browsers by default don't trust it. to get around this issue, visit https://localhost:3000 You will be presented with a screen saying connection is not private. For the purposes of renzora development you can click on Advanced and then proceed anyway. clicking the proceed link wont actually do anything. You can close the window immediately. Then refresh the website at http://localhost and the websocket should now connect.
 
 
-# project location for github Desktop
+# Project location for github Desktop
 - replace ```<distro>``` with your wsl distro and ```<username>``` with your wsl username
 - example: ```\\wsl$\ubuntu\home\johndoe\docker\web```
 
-renzora docker setup
+Renzora docker setup
 ```
-repo url: https://github.com/renzora/docker
+Repo url: https://github.com/renzora/docker
 
-local path: \\wsl$\<distro>\home\<username>\docker\docker
-```
-
-renzora web frontend
-```
-repo url: https://github.com/renzora/web
-
-local path: \\wsl$\<distro>\home\<username>\docker\web
+Local path: \\wsl$\<distro>\home\<username>\docker\docker
 ```
 
-renzora backend server
+Renzora web frontend
 ```
-repo url: https://github.com/renzora/docker/server
+Repo url: https://github.com/renzora/web
 
-local path: \\wsl$\<distro>\home\<username>\docker\server
+Local path: \\wsl$\<distro>\home\<username>\docker\web
 ```
 
-# services
+Renzora backend server
+```
+Repo url: https://github.com/renzora/docker/server
+
+Local path: \\wsl$\<distro>\home\<username>\docker\server
+```
+
+# Services
 - website: http://localhost
 - websocket: wss://localhost:3000
 
 # Renzora login
-- username: admin
-- password: password
+- Username: admin
+- Password: password
 
-# mysql
-- host: localhost
-- port: 3306
-- database name: renzora
-- database username: admin
-- database password: password
-- mysql password: password
+# MySql
+- Host: localhost
+- Port: 3306
+- Database Name: renzora
+- Database Username: admin
+- Database Password: password
+- Mysql Password: password
 
-# debugging
+# Debugging
 
 "driver not found"
-- after initially booting up your server you may see a driver not found message on the screen. this should go away after a few seconds as mysql service is still booting up.
+- After initially booting up your server you may see a driver not found message on the screen. this should go away after a few seconds as mysql service is still booting up.
