@@ -18,27 +18,28 @@ renzora
 ```
 
 # project location for github Desktop
-- replace ```<username>``` with your wsl username
+- replace ```<distro>``` with your wsl distro name and ```<username>``` with your wsl username
+- example: ```\\wsl$\ubuntu\home\johndoe\docker\web```
 
 renzora docker setup
 ```
 repo url: https://github.com/renzora/docker
 
-local path: \\wsl$\Ubuntu\home\<username>\docker\docker
+local path: \\wsl$\<distro>\home\<username>\docker\docker
 ```
 
 renzora web frontend
 ```
 repo url: https://github.com/renzora/web
 
-local path: \\wsl$\Ubuntu\home\<username>\docker\web
+local path: \\wsl$\<distro>\home\<username>\docker\web
 ```
 
 renzora backend server
 ```
 repo url: https://github.com/renzora/docker/server
 
-local path: \\wsl$\Ubuntu\home\<username>\docker\server
+local path: \\wsl$\<distro>\home\<username>\docker\server
 ```
 
 # services
