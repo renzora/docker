@@ -4,7 +4,7 @@
 
 # Installing on windows WSL
 
-Open your terminal of choice
+Open your terminal of choice (make sure docker desktop is running)
 ```
 wsl
 ```
