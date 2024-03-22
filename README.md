@@ -22,15 +22,6 @@ Install renzora (make sure Docker Desktop is running):
 curl -sSL https://gist.githubusercontent.com/pianoplayerjames/17cf725caeb79c52a5e8c853de405842/raw/setup.sh | bash
 ```
 
-Open renzora project in visual studio code:
-```
-cd docker
-```
-
-```
-code .
-```
-
 # services
 - website: http://localhost
 - websocket: wss://localhost:3000
