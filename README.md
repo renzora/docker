@@ -12,6 +12,11 @@ The below script will install php, composer, nodeJS, npm and all the latest renz
 curl -L renzora.net/dev | bash
 ```
 
+# Start server
+```
+renzora
+```
+
 # services
 - website: http://localhost
 - websocket: wss://localhost:3000
