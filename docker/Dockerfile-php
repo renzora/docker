@@ -1,0 +1,4 @@
+FROM php:8-fpm-alpine
+RUN apk update && apk add --no-cache openssl-dev autoconf g++ make && rm -rf /var/cache/apk/*
+RUN pecl install mongodb \
+    && docker-php-ext-enable mongodb
