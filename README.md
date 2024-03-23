@@ -2,7 +2,7 @@
 - Docker Desktop: https://www.docker.com/products/docker-desktop
 - WSL (windows) https://learn.microsoft.com/en-us/windows/wsl/install
 - Github Desktop: https://desktop.github.com
-- MySql Software: https://www.mysql.com/products/community
+- MongoDB Software: https://www.mongodb.com/products/tools/compass
 
 
 # Installing on Windows WSL
@@ -53,22 +53,18 @@ Local path: \\wsl$\<distro>\home\<username>\docker\server
 ```
 
 # Services
+- Server: Apache (gzip/brotli compression)
 - Website: ```http://localhost```
 - Websocket: ```wss://localhost:3000```
 
 # Renzora Login
 - Username: ```admin```
 - Password: ```password```
+- JWT key: ```key```
 
-# MySql
+# MongoDB
 - Host: ```localhost```
-- Port: ```3306```
+- Port: ```27017```
 - Database Name: ```renzora```
-- Database Username: ```admin```
-- Database Password: ```password```
-- Mysql Password: ```password```
-
-# Debugging
-
-"driver not found"
-- After initially booting up your server you may see a driver not found message on the screen. this should go away after a few seconds as mysql service is still booting up.
+- Mongo Username: ```admin```
+- Mongo Password: ```password```
