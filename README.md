@@ -53,7 +53,7 @@ Local path: \\wsl$\<distro>\home\<username>\docker\server
 ```
 
 # Services
-- Server: Apache (gzip/brotli compression)
+- Server: Nginx (gzip compression)
 - Website: ```http://localhost```
 - Websocket: ```wss://localhost:3000```
 
