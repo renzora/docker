@@ -63,6 +63,7 @@ Local path: \\wsl$\<distro>\home\<username>\docker\server
 - JWT key: ```key```
 
 # MongoDB
+- uri: mongodb://localhost:27017/
 - Host: ```localhost```
 - Port: ```27017```
 - Database Name: ```renzora```
