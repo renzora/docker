@@ -38,6 +38,8 @@ services:
     volumes:
       - db-data:/data/db
       - ./docker/db:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
   server:
     build:
       context: .
